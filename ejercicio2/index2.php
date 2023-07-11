@@ -30,11 +30,11 @@
                     </div>
                     <br>
                     <button type="button" class="btn btn-outline-info" onclick="agregarCliente()" >Agregar Cliente</button>
-                    <button type="submit" class="btn btn-outline-info" name="submit">Calcular</button>
+                    <button type="submit" class="btn btn-outline-primary" name="submit">Calcular</button>
                 </form>
                 <br>
                 <form action="eliminar.php">
-                        <button type="submit" class="btn btn-primary" name="sessionDestroy" value="Cerrar sesion" >borrar</button>
+                        <button type="submit" class="btn btn-outline-danger" name="sessionDestroy" value="Cerrar sesion" >borrar</button>
                 </form>
 
     
