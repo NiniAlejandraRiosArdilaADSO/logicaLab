@@ -2,9 +2,10 @@
 let formulario = document.getElementById('formulario');
 let btnEnviar = document.getElementById('btnenviar');
 
-let nom = document.getElementById('nom')
+let nombre = document.getElementById('nombre')
 let peso = document.getElementById('peso')
-let fecha = document.getElementById('fecha')
+let fechaNacimiento = document.getElementById('fecha_nacimiento')
+
 
 
 let soloNumeros = (e) => {
@@ -21,22 +22,23 @@ let enviarFormulario = formulario => {
 
 const validacion = (e) => {
     e.preventDefault()
-    if (nom.value === "") {
-        alert('Por favor, ingrese nombre')
-        nom.focus()
+    if (numero01.value === "") {
+        alert('Por favor, escribe primer numero')
+        numero01.focus()
         return false
     }
-    if (peso.value === "") {
-        alert('Por favor, escribe el peso')
-        peso.focus()
+    if (numero02.value === "") {
+        alert('Por favor, escribe segundo numero')
+        numero02.focus()
         return false
     }
 
-
+    
     enviarFormulario(formulario)
 }
 
 peso.addEventListener('keypress', soloNumeros)
+numero02.addEventListener('keypress', soloNumeros)
 
 
 btnEnviar.addEventListener('click', validacion)
