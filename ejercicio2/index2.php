@@ -133,7 +133,6 @@ if (isset($_POST['submit'])) {
         }
     </script>
 
-    die
 
 </body>
 </html>
